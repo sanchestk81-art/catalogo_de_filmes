@@ -27,3 +27,12 @@ Poder avaliar e fazer anotações sobre filmes de forma a deixar organizado e bo
  ![Sistema de cadastro de filmes](cadastrar_filme.png)
  ![Sistma de edição dos filmes](Edição_filmes.png)
  ![Sistema deletar os filmes](deletar_filmes.png)
+
+ # prototipos de telas do sistema
+ ![Prototipos de tela login](tela_login.png)
+ ![Prototipo de tela filmes](tela_filmes.png)
+ ![Edição de filmes](Adicionar_info.png)
+ ![Adicionar nota](Adicionar_nota.png)
+ ![salvar ou excluir](Salvar_excluit.png)
+ ![para fazer edições](Editar.png)
+ 
