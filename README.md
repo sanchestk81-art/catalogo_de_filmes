@@ -22,17 +22,22 @@ Poder avaliar e fazer anotações sobre filmes de forma a deixar organizado e bo
  ## 3. Requisitos não funcionais (RNF)
  **RNF01** -- O sistema deve salvar todos os filmes cadastrados E Mostrar eles em ordem de assistido por último, mas os filmes que foram favorito devem aparecer primeiro. 
 
- ![Sistema em visualização de fluxgrama](Visualizacao.png)
- ![Sistema de login vizualização](fluxograma_tela_login.png)
- ![Sistema de cadastro de filmes](cadastrar_filme.png)
- ![Sistma de edição dos filmes](Edição_filmes.png)
- ![Sistema deletar os filmes](deletar_filmes.png)
+ ![Sistema em visualização de fluxgrama](imagens/Visualizacao.png)
+ ![Sistema de login vizualização](imagens/fluxograma_tela_login.png)
+ ![Sistema de cadastro de filmes](imagens/cadastrar_filme.png)
+ ![Sistma de edição dos filmes](imagens/Edição_filmes.png)
+ ![Sistema deletar os filmes](imagens/deletar_filmes.png)
+
+ ![floxograma em brModelos](imagens/brmodelos.png)
 
  # prototipos de telas do sistema
- ![Prototipos de tela login](tela_login.png)
- ![Prototipo de tela filmes](tela_filmes.png)
- ![Edição de filmes](Adicionar_info.png)
- ![Adicionar nota](Adicionar_nota.png)
- ![salvar ou excluir](Salvar_excluit.png)
- ![para fazer edições](Editar.png)
+ ![Prototipos de tela login](imagens/tela_login.png)
+ ![Prototipo de tela filmes](imagens/tela_filmes.png)
+ ![Edição de filmes](imagens/Adicionar_info.png)
+ ![Adicionar nota](imagens/Adicionar_nota.png)
+ ![salvar ou excluir](imagens/Salvar_excluit.png)
+ ![para fazer edições](imagens/Editar.png)
+
+ # modelos do DRAWdb
+ ![modelos do DRAWdb](imagens/drawdb.modeloLógico.png)
  
