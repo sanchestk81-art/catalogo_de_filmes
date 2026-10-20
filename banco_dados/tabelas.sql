@@ -27,3 +27,5 @@ DROP CONSTRAINT usuarios_pkey;
 
 ALTER TABLE "usuarios"
 ADD PRIMARY KEY ("id");
+
+SELECT * FROM usuarios; 
