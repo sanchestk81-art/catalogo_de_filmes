@@ -1,4 +1,6 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
+from psycopg2.extras import RealDictCursor
+
 
 from database import criar_conexao
 
@@ -7,17 +9,21 @@ app = Flask(__name__)#um avariavel app atribuindo com a exetenção flasck
 @app.route('/') #sintaxe do flask, @ é um decorator é um padrão de projeto
 def home():
     return ("<h1>Hello World!</h1>")
-@app.route('/usuario', methods=['GET'])
-def buscar_usuario():
-    usuario ={
-        "nome": "Oscar",
-        "idade": 25,
-        "telefone": "(15)2400993381",
-    }
-    return usuario
+
+
+@app.route('/filme', methods=['GET'])
+def listar_filmes():
+   conn = criar_conexao()
+   cursor = conn.cursor(cursor_factory=RealDictCursor)
+
+   cursor.execute("SELECT * FROM filmes")
+   resposta = cursor.fetchall()
+
+   conn.close()
+   return render_template("index.html", filmes=resposta)
 
 @app.route('/produto', methods=['POST'])
-def cadastrar_produto():
+def cadastrar_filme():
     dados = request.get_json()
 
     if not dados:
@@ -51,7 +57,7 @@ def cadastrar_produto():
 
 
 @app.route('/produtos', methods=['PUT'])
-def atualizar_produto():
+def atualizar_filme():
     produto = {
         "id" :1,
         "nome":"caderno",
